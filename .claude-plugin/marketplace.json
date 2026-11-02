@@ -1,0 +1,11 @@
+{
+  "name": "rndbblnn-linear",
+  "owner": { "name": "rndbblnn" },
+  "plugins": [
+    {
+      "name": "linear-panel",
+      "source": "./",
+      "description": "A live Linear hierarchy beside the chat: every sub-issue under a parent, its status and rollups; Claude keeps Linear updated as it works."
+    }
+  ]
+}

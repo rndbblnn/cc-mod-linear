@@ -1,0 +1,32 @@
+{
+  "name": "linear-panel",
+  "version": "0.1.0",
+  "description": "A live Linear hierarchy beside the chat: every sub-issue under a parent, its status, progress and rollups; change status or comment from the panel, and Claude keeps Linear updated as it works.",
+  "author": {
+    "name": "rndbblnn",
+    "url": "https://github.com/rndbblnn"
+  },
+  "repository": "https://github.com/rndbblnn/cc-mod-linear",
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "mcpServer": {
+      "type": "string",
+      "title": "Linear MCP server name",
+      "description": "The connected Linear MCP server, as /mcp lists it (tools are mcp__<name>__*)",
+      "default": "linear"
+    },
+    "refreshSeconds": {
+      "type": "number",
+      "title": "Refresh the hierarchy every (seconds)",
+      "description": "Re-reads the whole tracked tree from Linear this often. 0 turns polling off (refresh with r or /linear refresh).",
+      "default": 90
+    },
+    "instructClaude": {
+      "type": "boolean",
+      "title": "Have Claude keep Linear updated",
+      "description": "Tells Claude which hierarchy is tracked and to move issues to In Progress / In Review as it works on them",
+      "default": true
+    }
+  }
+}
